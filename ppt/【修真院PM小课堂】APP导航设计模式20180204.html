@@ -1,0 +1,209 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>葡萄藤PPT</title>
+
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/reveal.css">
+
+    <!-- PPT主题，可以在/css/reveal/theme/中选择其他主题，目前暂时只能使用该模板 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/theme/ptt.css">
+
+    <!-- syntax highlighting 代码高亮主题 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/lib/reveal/css/zenburn.css">
+
+    <!-- 打印和PDF输出样式 -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'https://ptteng.github.io/PPT/css/reveal/print/pdf.css' : '../css/reveal/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+	
+</head>
+<body>
+<img src="https://ptteng.github.io/PPT/img/demo/logo.png" alt="" usemap="#pttmap" class="base-logo">
+<map name="pttmap">
+    <area shape="rect" coords="0,0,276,58" href="http://www.jnshu.com" alt="" target="_blank"/>
+</map>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h2>APP导航设计模式</h2>
+			<p></p>
+            <h3>PM分享会</h3>
+            <p>分享人：刘宁</p>
+        </section>
+        <section>
+            <p>一.APP导航设计模式有哪些?</p>
+            <p>二.APP导航设计模式简单介绍</p>
+            <p>三.更多讨论</p>
+        </section>
+		<section>
+		<section>
+            <h3>一.APP导航设计模式有哪些?</h3>
+        </section>
+		<section>
+			<p>总结起来，导航主要分为两大类，横向和纵向。横向的导航有：标签导航、舵式导航、tab导航、轮播导航；纵向的导航有：宫格导航、下拉导航、列表导航、隐喻导航、抽屉导航。这些是导航的基本样式，如今大部分的导航设计都可以从中变种、组合而成。</p>
+            <img src="E:\小课堂\2.png">
+        </section>
+		</section>
+        <section>
+		<section>
+            <h3>二.APP导航设计模式简单介绍</h3>
+		</section>
+		<section>
+			<p>1.标签导航（选项卡导航）</p>
+			<p>将入口放在页面底部，形成标签导航，这是现在市面上比较流行的一种导航模式，几乎所有APP都有应用到。优点显而易见，让用户一进入APP就能对APP的结构有一个初步的认识，简单易懂。通常这种导航方式底部的标签选项不会超过5个，如果超过五个就会考虑适用舵式导航。</p>
+		</section>
+		<section>
+			<img src="E:\小课堂\3.png">	
+			<img src="E:\小课堂\4.png">	
+		</section>
+		<section>
+			<p>2.舵式导航</p>
+			<p>与标签导航类似，但是其中一个导航标签蕴含更多的操作选项，也可以理解为标签中蕴含更多二级导航标签，可以让导航栏简洁高效，避免拥挤，又可以突出常用功能。</p>
+		</section>
+		<section>
+			<img src="E:\小课堂\5.png">	
+			<img src="E:\小课堂\6.png">	
+		</section>
+		<section>
+			<p>其中，舵式导航中蕴含二级导航标签的标签可以单独成为一种导航——点聚导航，适用于因为内容的展示，要求界面有极高的简洁性的APP。印象笔记的APP版本就是一个典型的点聚导航，印象笔记是个特别的例子，不仅用点聚导航作为一级导航，还用了抽屉导航作为二级导航，应该是为了最大程度保持产品的简洁性。</p>	
+		</section>
+		<section>
+			<img src="E:\小课堂\7.png">	
+			<img src="E:\小课堂\8.png">
+		</section>
+		<section>
+			<p>3.tab标签导航</p>
+			<p>将标签放到界面的上方，就会形成tab标签导航，这种导航适用于类目较多的APP作为二级导航梳理页面逻辑，布局清晰。作为一个二级导航，顶部标签导航应用于多种情境下，可以固定数量，展示有限的几个标签。也可以扩大一定的数量，变成向左滑动展现更多标签，十分灵活。</p>
+		</section>
+		<section>
+			<img src="E:\小课堂\9.png">	
+			<img src="E:\小课堂\10.png">
+		</section>
+		<section>
+			<p>4.抽屉导航</p>
+			<p>抽屉导航是将菜单隐藏在当前页面后，点击导航入口即可像拉抽屉一样拉出菜单。抽屉导航一般用来放置对用户而言不太常用或者对于产品而言不太核心的功能，优点是可以节省页面空间，比较适合于不那么需要频繁切换内容的应用，例如对设置、关于、个人信息等内容的隐藏。</p>
+		</section>
+		<section>	
+			<img src="E:\小课堂\11.png">	
+			<img src="E:\小课堂\12.png">
+		</section>
+		<section>
+			<p>5.下拉导航</p>
+			<p>一般位于产品顶部，通过点击呼出导航菜单。导航菜单以浮窗形式位于界面上层，可通过点击导航菜单以外的区域使其收起。下拉导航的菜单与界面的连贯性比抽屉式要好，容易让用户感知当前位置。但由于是位于屏幕上方，相对隐蔽而且不能结合手势操作，所以该菜单形式也不适合于频繁的切换功能使用。考虑到导航菜单的可用面积较小，所以一般采用列表的形式展示菜单内容。下拉导航还有一种变式，就是下来菜单中展示两级甚至多级，一般在电商产品中比较常见，因为品类和筛选条件众多。</p>
+		</section>
+		<section>	
+			<img src="E:\小课堂\13.png">	
+			<img src="E:\小课堂\14.png">
+		</section>
+		<section>	
+			<img src="E:\小课堂\15.png">	
+		</section>
+		<section>
+			<p>6.宫格导航</p>
+			<p>主要入口全部聚合在页面，让用户做出选择。这样的组织方式虽然无法让用户第一时间看到内容或执行操作，用户的选择压力也比较大。但却能够让用户整体上了解APP提供的服务，从而选择自己所需要的那个服务。这种导航于一些提供的服务较多或者类目较多的APP，例如支付宝、优酷等。</p>
+		</section>
+		<section>	
+			<img src="E:\小课堂\16.png">	
+			<img src="E:\小课堂\17.png">	
+		</section>
+		<section>
+			<p>由于受到卡片式设计的影响，宫格导航也出现了不少的变式，主要有以下几种：</p>
+			<p>将宫格的卡片变大，宫格与宫格时间不留空白。</p>
+			<img src="E:\小课堂\18.png">
+		</section>
+		<section>
+			<p>增加纵向滚动功能，就可以增加卡片数量的展现，可以说是无限的。如下图：</p>
+			<img src="E:\小课堂\19.png">
+		</section>
+		<section>
+			<p>对宫格进行分类</p>
+			<img src="E:\小课堂\20.png">
+		</section>
+		<section>
+			<p>每个分类也可以继续展开，滑动出更多，甚至跟订阅相结合</p>
+			<img src="E:\小课堂\21.png">
+		</section>
+		<section>
+			<p>7.列表导航</p>
+			<p>通过列表指示类目，在右侧显示箭头表示有二级内容，列表导航通常用于二级页，由于它与宫格导航一样，不会默认展示任何实质内容，所以通常app不会在首页使用它。这种导航结构清晰，易于理解，冷静高效，能够帮助用户快速的定位去到对应的页面。</p>
+			<p>同样可以对列表进行分类产生变式，这样逻辑会更清晰，不知道如何确定分类名称。把分类名称去掉也是可以的。只是用间距将每一组列表隔开也能起到梳理逻辑的作用。</p>
+		</section>
+		<section>
+			<img src="E:\小课堂\22.png">
+			<img src="E:\小课堂\23.png">
+		</section>
+		<section>
+			<img src="E:\小课堂\24.png">
+		</section>
+		<section>
+			<p>8.轮播导航</p>
+			<p>每一个页面就代表一个导航入口，这就是轮播导航，适用于比较简单或者结构比较扁平的APP。轮播导航能够最大程度的保证应用的页面简洁性，操作也是最方便的，只需要手指左右滑动。缺点也很明显：承载入口的数量有限，超过10个可能就多了。这种导航常见于查看图片，也经常与其他导航模式结合，作为banner广告呈现。</p>
+		</section>
+		<section>
+			<img src="E:\小课堂\25.png">
+			<img src="E:\小课堂\26.png">
+		</section>
+		<section>
+			<p>9.隐喻导航</p>
+			<p>如果原始导航中的五个入口，变成游戏界面中的五个关卡，只是简单地将其按照上下顺序列出来就会不太适用。游戏对导航的要求不仅要可用，更要和整个游戏的风格等匹配。因此，有了隐喻导航这种模式，用页面模仿应用的隐喻对象。这种导航主要用于游戏，但在帮助导航 人们组织事物(如日记、书籍等)，并对其进行分类的应用中也能看到。p>
+		</section>
+		<section>
+			<img src="E:\小课堂\27.png">
+		</section>
+		</section>
+        <section>
+		<section>
+			<h3>三.更多讨论</h3>			
+			<p>参考资料来自于：人人都是产品经理</p>
+            <p>感谢观看,如有出错,恳请指正</p>
+            <p><small>BY : 刘宁</small></p>
+        </section>
+
+    </div>
+</div>
+
+<script src="https://ptteng.github.io/PPT/lib/reveal/js/head.min.js"></script>
+<script src="https://ptteng.github.io/PPT/lib/reveal/reveal.js"></script>
+
+<script>
+
+    // 以下为常见配置属性的默认值
+    // {
+    // 	controls: true, // 是否在右下角展示控制条
+    // 	progress: true, // 是否显示演示的进度条
+    // 	slideNumber: false, // 是否显示当前幻灯片的页数编号，也可以使用代码slideNumber: 'c / t' ，表示当前页/总页数。
+    // 	history: false, // 是否将每个幻灯片改变加入到浏览器的历史记录中去
+    // 	keyboard: true, // 是否启用键盘快捷键来导航
+    // 	overview: true, // 是否启用幻灯片的概览模式，可使用"Esc"或"o"键来切换概览模式
+    // 	center: true, // 是否将幻灯片垂直居中
+    // 	touch: true, // 是否在触屏设备上启用触摸滑动切换
+    // 	loop: false, // 是否循环演示
+    // 	rtl: false, // 是否将演示的方向变成RTL，即从右往左
+    // 	fragments: true, // 全局开启和关闭碎片。
+    // 	autoSlide: 0, // 两个幻灯片之间自动切换的时间间隔（毫秒），当设置成 0 的时候则禁止自动切换，该值可以被幻灯片上的 ` data-autoslide` 属性覆盖
+    // 	transition: 'default', // 切换过渡效果，有none/fade/slide/convex/concave/zoom
+    // 	transitionSpeed: 'default', // 过渡速度，default/fast/slow
+    // 	mouseWheel: true, //是否启用通过鼠标滚轮来切换幻灯片
+    // }
+
+    // 初始化幻灯片
+    Reveal.initialize({
+        history: true,
+        dependencies: [
+            { src: 'https://ptteng.github.io/PPT/plugin/markdown/marked.js' },
+            { src: 'https://ptteng.github.io/PPT/plugin/markdown/markdown.js' },
+            { src: 'https://ptteng.github.io/PPT/plugin/notes/notes.js', async: true },
+            { src: 'https://ptteng.github.io/PPT/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+    });
+</script>
+</body>
+</html>
