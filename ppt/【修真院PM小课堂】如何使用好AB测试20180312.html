@@ -1,0 +1,221 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>葡萄藤PPT</title>
+
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/reveal.css">
+
+    <!-- PPT主题，可以在/css/reveal/theme/中选择其他主题，目前暂时只能使用该模板 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/theme/ptt.css">
+
+    <!-- syntax highlighting 代码高亮主题 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/lib/reveal/css/zenburn.css">
+
+    <!-- 打印和PDF输出样式 -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'https://ptteng.github.io/PPT/css/reveal/print/pdf.css' : '../css/reveal/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+	
+</head>
+<body>
+<img src="https://ptteng.github.io/PPT/img/demo/logo.png" alt="" usemap="#pttmap" class="base-logo">
+<map name="pttmap">
+    <area shape="rect" coords="0,0,276,58" href="http://www.jnshu.com" alt="" target="_blank"/>
+</map>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h2>如何使用好AB测试</h2>
+			<p></p>
+            <h3>PM分享会</h3>
+            <p>分享人：刘宁</p>
+        </section>
+        <section>
+            <p>一.什么是A/B测试？</p>
+            <p>二.什么情况不适合做 A/B 测试？</p>
+            <p>三.什么阶段的公司适合做AB测试？</p>
+			<p>四.如何利用A/B测试做增长？</p>
+			<p>五.A/B测试的数据结果出来后，应该怎么样选择？</p>
+			<p>六. AB测试的具体实施流程是什么样的呢？</p>
+			<p>七.有哪些AB测试需要注意的经验或规则？</p>
+			<p>八. A/B测试的应用场景有哪些？</p>
+			<p>九. 更多讨论</p>
+        </section>
+		<section>
+		<section>
+            <h3>一.什么是A/B测试？</h3>
+        </section>
+		<section>
+            <p>A/B测试是一种流行的网页优化方法，可以用于增加转化率注册率等网页指标。简单来说，就是为同一个目标制定两个方案（比如两个页面），将产品的用户流量分割成 A/B 两组，一组试验组，一组对照组，两组用户特点类似，并且同时运行。试验运行一段时间后分别统计两组用户的表现，再将数据结果进行对比，就可以科学的帮助决策。</p>
+		</section>
+		<section>
+			<p>比如在这个例子里，50%用户看到 A 版本页面，50%用户看到 B 版本页面，结果 A 版本用户转化率 23%，高于 B 版本的 11%，在试验流量足够大的情况下，我们就可以判定 A 版本胜出，然后将 A 版本页面推送给所有的用户。</p>
+			<img src="E:\小课堂\1.png">
+		</section>
+		<section>
+			<p>AB测试本质上是个分离式组间实验，以前进行AB测试的技术成本和资源成本相对较高，但现在一系列专业的可视化实验工具的出现，AB测试已越来越成为网站优化常用的方法。</p>
+			<p>A/B测试其实是一种“先验”的实验体系，属于预测型结论，与“后验”的归纳性结论差别巨大。A/B测试的目的在于通过科学的实验设计、采样样本代表性、流量分割与小流量测试等方式来获得具有代表性的实验结论，并确信该结论在推广到全部流量可信。</p>
+			<p>测试的应用范围，——必须是单变量。</p>
+		</section>
+		</section>
+        <section>
+		<section>
+			<h3>二.什么情况不适合做 A/B 测试？</h3>
+		</section>
+		<section>
+			<p>有时多个设计稿可能会有非常大的差异，这样的情况一般不太适合做 A/B 测试，因为它们的变量太多了，变量之间会有较多的干扰，很难通过 A/B 测试的方法来找出各个变量对结果的影响程度。</p>
+			<p>另外，虽然 A/B 测试名字中只包含 A、B ，但并不是说它只能用于比较两个方案的好坏，事实上，你完全可以设计多个方案进行测试，“A/B 测试”这个名字只是一个习惯的叫法。</p>
+		</section>
+		<section>
+			<p>回到网站设计，一般来说，每个设计方案应该大体上是相同的，只是某一个地方有所不同，比如某处排版、文案、图片、颜色等。然后对不同的用户展示不同的方案。</p>
+			<p>要注意，不同的用户在他的一次浏览过程中，看到的应该一直是同一个方案。比如他一开始看到的是 A 方案，则在此次会话中应该一直向他展示 A 方案，而不能一会儿让他看 A 方案，一会儿让他看 B 方案。同时，还需要注意控制访问各个版本的人数，大多数情况下我们会希望将访问者平均分配到各个不同的版本上。要做到这些很简单，根据 cookie （比如 cookie 会话ID的最后一位数字）决定展示哪个版本就是一个不错的方法。</p>
+		</section>
+		<section>
+			<p>下面是 A/B 测试示意图：</p>
+			<img src="E:\小课堂\2.png">
+			<p>可以看到，要实现 A/B 测试，我们需要做以下几个工作：</p>
+			<p>1、开发两个（或多个）不同的版本并部署； 2、收集数据； 3、分析数据，得出结果。 </p>
+		</section>
+		</section>
+        <section>
+		<section>
+			<h3>三.什么阶段的公司适合做AB测试？</h3>
+		</section>
+		<section>
+			<p>AB测试你自己做是要花很大的人力、物力，大公司有很大的用户，做AB测试的话，是可以持续投入的，每个投入的提升增长价值也很大，是公司中最为重要的。</p>
+			<p>很多中小型的公司具备条件，但不一定有经验或能力执行和分析，不过现在也有些第三方服务公司提供了工具，方便做AB测试，降低了门槛，比如吆喝科技（http://www.appadhoc.com）在这方面做得非常好。</p>
+			<p>初创公司，在产品还没验证的时候，或者用户量非常小的时候，不适合做AB测试。</p>
+		</section>
+		</section>
+        <section>
+		<section>
+			<h3>四.如何利用A/B测试做增长？</h3>
+		</section>
+		<section>
+			<p>AB 测试是撬动理性增长的最重要工具之一。AB测试背后的理念是在于用数据来帮助你做决策，来帮助你做更好的决策，很多东西就不再是靠艺术创造、靠想象、靠拍脑袋来做，而是靠数据，像你写代码、做分析的时候那样一种很理性的模式。</p>	
+			<p>如果没有 AB 测试，如果公司盲目地前行，会造成很大的损失。</p>
+		</section>
+		<section>
+			<p>在 Facebook 强行规定，发布任何一个很大功能的时候，开始要先计划，同时要做一个预期，计划就是你这个功能发布之后，大概周期是多久，你的预期就是对用户的数据大概有怎样的影响，一般来说是用户的活跃度上涨，或者是用户的数量上涨，但是可能有其他的影响。比如说用户的在线时长会下降一点点，因为你更加有效了，或者是对用户的耗电量会有影响，以及它流量的损耗。</p>	
+		</section>
+		</section>
+        <section>
+		<section>
+			<h3>五.A/B测试的数据结果出来后，应该怎么样选择？</h3>
+		</section>
+		<section>
+			<p>从数据结果分析客观的效果，但往往也需要根据用户体验和总收益做一个折衷。</p>	
+			<p>《增长黑客》作者范冰讲过一个百姓网的案例。百姓网之前有段时间销售员和产品经理撕逼，销售人员是觉得为了获得更多销售额，我们必须是用户给钱越多，我们给他越大的特权。</p>
+			<img src="E:\小课堂\3.png">
+		</section>
+		<section>
+			<p>他们想像左图这样，用户在我这个平台上发布的小帖子以后，谁给的钱多，给得最多的我给你置顶，同时又给你一个广告位，就是红色标量，其他的给钱没那么多的，在相对置顶比较高的位置。就是你越给钱，我越给你一些标签把你位置提得越高，这是销售人员的思维；</p>	
+			<p>产品经理的思维是右边这种，虽然你给了钱，你是我们的金主，你很重要，但是我要重视我们的产品体验，如果说你给钱我就让你上去的话，其实这上面满眼看得都是广告，而且谁给钱谁就上，那就有点像百度了，像现在这个样子他们就提出我们的产品在右边，不管你给了多少钱，我最多就给你个高亮，所以你的位置我不给你提前。</p>
+		</section>
+		<section>
+			<p>当时为了这个原因，双方激烈的撕逼。撕逼一般是没有结果的，因为公说公有理，婆说婆有理，后来他们想到组织一次 AB 测试，下发了两波用户，看这两波用户各自呈现两种不同的页面，哪波用户最后转化率高，带来的收入高，还有其他一些指标的综合判断。</p>	
+			<p>结果是怎样的？</p>
+			<p>大家从直觉判断，一定觉得产品经理的决定是对的，最后一定是用了产品经理的方案。</p>
+		</section>
+		<section>
+			<p>测试结果，右边产品经理方案是好的，他的数据更高，但是最后用了左边的方案。为什么？因为测试结果反馈显示，这两个方案虽然右边更好，但是他这个好的方案只是精确到小数点后面的千分位，只是比前一种方案好了那么一点，虽然是好了那么一点，但是左边的方案更吸金，左边的能吸引到大家更多的往里投钱，更多的花钱，既然是只好了这么一点点，当然要用左边的。于是经过测试以后，他们最后用了左边的方案，这是大家没有想到的结果。</p>	
+			<p>因为 AB 测试固然重要，AB 测试的结果的确右边好，但是有的时候要结合实际，如果说差别不是很大的话，你可能要选一种赚钱更多的方式，这是 AB 测试一个很大的价值，大家不要偏信数据，不要被数据给完全左右，有的时候结合一些你的理性的思考。</p>	
+		</section>
+		</section>
+		</section>
+        <section>
+		<section>
+            <h3>六. AB测试的具体实施流程是什么样的呢？</h3>
+		</section>
+		<section>
+            <p>其实非常简单，可能在座的大家都有一定地印象，比如说你有一个网页，就是你用户流量的页面，你用上面的绿色作为一个代表，如果你现在的页面只有23%的转化率，你希望通过某种黑客方式，把它调一调，改一改，改成蓝色的页面，希望能够提升它的转化率。</p>
+			<p>那么可以用AB测试怎么做呢？就让来访流量的访客，一半或者一部分的访客看到绿色的老版本，一部分的访客看到蓝色的新版本，这些用户自己是无感知的，他们并不知道自己是被分配在实验里面，他们依然按照自己的行为去操作，他们会买东西，会退出或者怎么样，然后你看他的转化率，有没有发生变化，假如我们看到一个很糟糕的现象，这个蓝色的版本，它的转化率反而降低了只有11%了，结果你的老版本还胜出的，就说明你改进的方案不成功，于是你会想其 他的方案再去改，总会找到能够提升转化率的方法。</p>
+		</section>
+		</section>
+		</section>
+        <section>
+		<section>
+            <h3>七.有哪些AB测试需要注意的经验或规则？</h3>
+		</section>
+		<section>
+			<p>1.效果惊人，一些很微小的改动，它就可能造成对你KPI巨大的影响。</p>
+			<p>2.大多数改动都不会带来大幅度提高KPI，所以你需要耐心。</p>
+			<p>3. 凡是看上去很出人意料的图表，通常都是因为数据统计错了。</p>
+			<p>4.各个产品几乎都不一样，你复制他人的经验，往往都没有什么效果。</p>
+		</section>
+		<section>
+			<p>5.任何能加速用户响应时间的改动，都会带来KPI的正向提升。</p>
+			<p>6.点击率是很容易提高的，但是流失率是很难改进的，千万不要把精力放在优化某个页面点击率上。</p>
+			<p>7.尽量不要做很复杂的大量改动的实验，而是要做很简单的小的迭代。</p>
+		</section>
+		</section>
+		</section>
+        <section>
+		<section>
+            <h3>八. A/B测试的应用场景有哪些？</h3>
+		</section>
+		<section>
+			<p>A/B测试这种方法论的应用非常广泛，包括在Web产品、移动产品、数字广告优化领域的应用。</p>
+			<p>应用场景由小到大可以可以分为：</p>
+			<p>元素/控件层面</p>
+			<p>功能层面</p>
+			<p>产品层面</p>
+			<p>公司层面</p>
+		</section>
+		</section>
+        <section>
+		<section>
+			<p>九. 更多讨论</p>
+			<p>参考资料来自于：http://www.pmcaff.com</p>
+            <p>感谢观看,如有出错,恳请指正</p>
+            <p><small>BY : 刘宁</small></p>
+        </section>
+
+    </div>
+</div>
+
+<script src="https://ptteng.github.io/PPT/lib/reveal/js/head.min.js"></script>
+<script src="https://ptteng.github.io/PPT/lib/reveal/reveal.js"></script>
+
+<script>
+
+    // 以下为常见配置属性的默认值
+    // {
+    // 	controls: true, // 是否在右下角展示控制条
+    // 	progress: true, // 是否显示演示的进度条
+    // 	slideNumber: false, // 是否显示当前幻灯片的页数编号，也可以使用代码slideNumber: 'c / t' ，表示当前页/总页数。
+    // 	history: false, // 是否将每个幻灯片改变加入到浏览器的历史记录中去
+    // 	keyboard: true, // 是否启用键盘快捷键来导航
+    // 	overview: true, // 是否启用幻灯片的概览模式，可使用"Esc"或"o"键来切换概览模式
+    // 	center: true, // 是否将幻灯片垂直居中
+    // 	touch: true, // 是否在触屏设备上启用触摸滑动切换
+    // 	loop: false, // 是否循环演示
+    // 	rtl: false, // 是否将演示的方向变成RTL，即从右往左
+    // 	fragments: true, // 全局开启和关闭碎片。
+    // 	autoSlide: 0, // 两个幻灯片之间自动切换的时间间隔（毫秒），当设置成 0 的时候则禁止自动切换，该值可以被幻灯片上的 ` data-autoslide` 属性覆盖
+    // 	transition: 'default', // 切换过渡效果，有none/fade/slide/convex/concave/zoom
+    // 	transitionSpeed: 'default', // 过渡速度，default/fast/slow
+    // 	mouseWheel: true, //是否启用通过鼠标滚轮来切换幻灯片
+    // }
+
+    // 初始化幻灯片
+    Reveal.initialize({
+        history: true,
+        dependencies: [
+            { src: 'https://ptteng.github.io/PPT/plugin/markdown/marked.js' },
+            { src: 'https://ptteng.github.io/PPT/plugin/markdown/markdown.js' },
+            { src: 'https://ptteng.github.io/PPT/plugin/notes/notes.js', async: true },
+            { src: 'https://ptteng.github.io/PPT/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+    });
+</script>
+</body>
+</html>
